@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build": "rollup dayjs --file dayjs.cjs.js --format cjs -p node-resolve -p commonjs --exports default",
+    "node-commonjs": "node index.cjs",
+    "node-esm": "node index.mjs"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7"
+  },
+  "devDependencies": {
+    "rollup": "^2.66.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-commonjs": "^21.0.1"
+  }
+}

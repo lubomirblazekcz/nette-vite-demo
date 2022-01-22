@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "dayjs": "https://ga.jspm.io/npm:dayjs@1.10.7/dayjs.min.js"
+  }
+}

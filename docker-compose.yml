@@ -1,0 +1,9 @@
+services:
+  web:
+    image: josefjebavy/debian-apache-php8.1
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+      - 443:443

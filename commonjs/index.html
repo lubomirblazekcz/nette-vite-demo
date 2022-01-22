@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/browser-cjs@1.0.3/require.min.js"></script>
+</head>
+<body>
+    <script>
+      const dayjs = require('dayjs.cjs.js')
+
+      setInterval(() => document.body.innerHTML = dayjs().toString(),100)
+    </script>
+</body>
+</html>

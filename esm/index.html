@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- For not supported browsers - Firefox, Safari -->
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.4.1/dist/es-module-shims.min.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "dayjs": "https://ga.jspm.io/npm:dayjs@1.10.7/dayjs.min.js"
+        }
+      }
+  </script>
+</head>
+<body>
+    <script type="module">
+      import dayjs from 'dayjs'
+
+      setInterval(() => document.body.innerHTML = dayjs().toString(),100)
+    </script>
+</body>
+</html>
